@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "simchacraft",
+  "version": "1.0.0",
+  "name": "SimchaCraft",
+  "description": "A mod celebrating Jewish culture, history, and items.",
+  "authors": [
+    "Your Name (or SimchaCraft Example)"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/simchacraft/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.simchacraft.SimchaCraftMod"
+    ],
+    "client": [
+      "com.example.simchacraft.SimchaCraftClient"
+    ]
+  },
+  "mixins": [
+    "simchacraft.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "1.21.1", 
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

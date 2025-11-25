@@ -1,0 +1,29 @@
+// Diagnostic init script: prints root project extensions and plugins
+gradle.projectsEvaluated {
+    def p = rootProject
+    println '\n--- DIAGNOSTIC: project extensions ---'
+    p.extensions.getAsMap().keySet().sort().each { name ->
+        try {
+            def ext = p.extensions.findByName(name)
+            println "ext: ${name} -> ${ext?.getClass()?.name}"
+        } catch(Exception e) {
+            println "ext: ${name} -> (error reading class)"
+        }
+    }
+
+    println '\n--- DIAGNOSTIC: applied plugins ---'
+    p.plugins.each { pl -> println "plugin: ${pl.class.name} -> ${pl.toString()}" }
+
+    println '\n--- DIAGNOSTIC: meta method check ---'
+    println "respondsTo(minecraft)? -> ${p.metaClass.respondsTo(p, 'minecraft') ? 'YES' : 'NO'}"
+
+    println '\n--- DIAGNOSTIC: loom extension methods ---'
+    try {
+        def lx = p.extensions.findByName('loom')
+        lx.getClass().methods*.name.sort().unique().each { println it }
+    } catch (e) {
+        println "could not inspect loom extension: ${e.message}"
+    }
+
+    println '\n--- DIAGNOSTIC: done ---\n'
+}

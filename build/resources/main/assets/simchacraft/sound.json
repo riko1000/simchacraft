@@ -1,0 +1,20 @@
+{
+  "shofar_blow": {
+    "sounds": [
+      {
+        "name": "simchacraft:shofar_blow_sound",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.simchacraft.shofar_blow"
+  },
+  "hamudi_pop": {
+    "sounds": [
+      {
+        "name": "simchacraft:hamudi_pop_sound",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.simchacraft.hamudi_pop"
+  }
+}

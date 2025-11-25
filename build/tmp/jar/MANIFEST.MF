@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Fabric-Loom-Gradle-Version: 1.6.11
+Specification-Title: SimchaCraft
+Specification-Vendor: Omer Pur
+Specification-Version: 1.0.0
+Implementation-Title: SimchaCraft
+Implementation-Vendor: Omer Pur
+Implementation-Version: 1.0.0
+

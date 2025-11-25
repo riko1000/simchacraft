@@ -1,0 +1,12 @@
+{
+  "shofar_blow": {
+    "sounds": [
+      "simchacraft:shofar_blow_sound"
+    ]
+  },
+  "maisa_pop": {
+    "sounds": [
+      "simchacraft:maisa_pop_sound"
+    ]
+  }
+}

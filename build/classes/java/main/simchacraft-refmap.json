@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "com/example/simchacraft/mixin/CreeperAccessor": {
+      "currentFuseTime": "field_7227:I"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "com/example/simchacraft/mixin/CreeperAccessor": {
+        "currentFuseTime": "field_7227:I"
+      }
+    }
+  }
+}

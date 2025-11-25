@@ -1,0 +1,113 @@
+// Minimal, known-good Fabric Loom 1.6.11 Gradle configuration
+plugins {
+    id 'fabric-loom' version '1.6.11'
+    id 'java'
+    id 'idea'
+}
+
+// Use properties from gradle.properties when available, fall back to defaults
+group = project.findProperty('maven_group') ?: 'com.simchacraft'
+version = project.findProperty('mod_version') ?: '1.0.0'
+archivesBaseName = 'simchacraft'
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+// Pick a Fabric API BOM that exists for Minecraft 1.21.1 — adjust if you prefer a different release.
+def fabric_api_version = project.findProperty('fabric_api_version') ?: '0.102.1+1.21.1'
+
+
+repositories {
+    mavenCentral()
+    maven { name = 'Fabric'; url = 'https://maven.fabricmc.net/' }
+}
+
+dependencies {
+    // The 'minecraft' and 'mappings' dependencies are required so Fabric Loom can setup the project.
+    // These coordinates may need fine-tuning for exact Yarn build IDs; adjust if necessary.
+    minecraft 'com.mojang:minecraft:1.21.1'
+    mappings 'net.fabricmc:yarn:1.21.1+build.1:v2'
+    
+    // Add Fabric loader dependency
+    modImplementation "net.fabricmc:fabric-loader:0.15.11"
+
+    // Use the Fabric API BOM as a platform so transitive modules resolve cleanly, then bring in the
+    // aggregator artifact. This coordinate is published on the Fabric maven repo.
+    // If you prefer a newer Fabric API, change the version above (e.g. 0.115.x, 0.116.x, etc.)
+    modImplementation(enforcedPlatform("net.fabricmc.fabric-api:fabric-api-bom:${fabric_api_version}"))
+    modImplementation("net.fabricmc.fabric-api:fabric-api")
+    // Ensure mixin annotations are available at compile time and processors are wired
+    compileOnly 'net.fabricmc:sponge-mixin:0.11.4+mixin.0.8.5'
+    compileOnly 'net.fabricmc:fabric-mixin-compile-extensions:0.6.0'
+    annotationProcessor 'net.fabricmc:fabric-mixin-compile-extensions:0.6.0'
+}
+
+// Loom-specific configuration
+loom {
+    // accessWidenerPath omitted during diagnostics to avoid parsing errors.
+}
+
+
+// Java compilation options
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = 'UTF-8'
+    it.options.compilerArgs.addAll(['-Xlint:all', '-parameters'])
+}
+
+jar {
+    from('LICENSE') {
+        rename { "${it}_${project.baseName}" }
+    }
+    manifest {
+        attributes([
+            'Fabric-Loom-Gradle-Version': '1.6.11',
+            'Specification-Title': project.findProperty('mod_name') ?: 'SimchaCraft',
+            'Specification-Vendor': project.findProperty('author') ?: 'Author',
+            'Specification-Version': project.findProperty('mod_version') ?: '1.0.0',
+            'Implementation-Title': project.findProperty('mod_name') ?: 'SimchaCraft',
+            'Implementation-Vendor': project.findProperty('author') ?: 'Author',
+            'Implementation-Version': project.findProperty('mod_version') ?: '1.0.0'
+        ])
+    }
+}
+
+// Diagnostic task: print compile classpath for troubleshooting (remove when done)
+tasks.register('printCompileClasspath') {
+    doLast {
+        println('\n--- compileClasspath entries ---')
+        configurations.compileClasspath.resolvedConfiguration.resolvedArtifacts.each { a ->
+            println("${a.moduleVersion.id} -> ${a.file}")
+        }
+        println('--- end compileClasspath ---\n')
+    }
+}
+
+// Diagnostic: print the actual JavaCompile task classpath and annotation processor path
+tasks.named('compileJava') {
+    doFirst {
+        println('\n=== compileJava task diagnostics ===')
+        try {
+            println('compileJava.classpath:')
+            compileJava.classpath.files.each { f -> println("  ${f}") }
+        } catch(Exception e) {
+            println("Failed to print compileJava.classpath: ${e}")
+        }
+        try {
+            println('\nannotationProcessorPath:')
+            if (compileJava.options.annotationProcessorPath != null) {
+                compileJava.options.annotationProcessorPath.files.each { f -> println("  ${f}") }
+            } else {
+                println('  <null>')
+            }
+        } catch(Exception e) {
+            println("Failed to print annotationProcessorPath: ${e}")
+        }
+        println('=== end compileJava diagnostics ===\n')
+    }
+}
