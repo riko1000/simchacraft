@@ -50,7 +50,7 @@ This is a Fabric mod for Minecraft 1.21.1 that adds custom items and entities, i
    After building, the compiled mod JAR will be at `build/libs/simchacraft-1.0.0.jar`
 
 5. **Install the mod:**
-   - Place `simchacraft-1.0.0.jar` in your Minecraft `mods` folder
+   - Place `simchacraft-1.0.0.jar`(located in simchacraft/build/libs) in your Minecraft `mods` folder
    - Ensure you have Fabric Loader 0.15.11+ and Fabric API installed
    - Launch Minecraft with the Fabric profile
 
