@@ -9,9 +9,9 @@ import net.minecraft.client.render.entity.EntityRendererFactory;
 public class SimchaCraftClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        // Register the entity renderer for MaisaCreeper
+        // Register the custom renderer for MaisaCreeper with the custom texture
         EntityRendererRegistry.register(SimchaCraftMod.MAISA_CREEPER, (context) -> {
-            return new CreeperEntityRenderer(context);
+            return new MaisaCreeperRenderer(context);
         });
 
         // Register the dedicated Nevo renderer (handles held items correctly)

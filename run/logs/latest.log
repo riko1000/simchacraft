@@ -1,5 +1,5 @@
-[23:52:47] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.15.11
-[23:52:47] [main/INFO] (FabricLoader) Loading 55 mods:
+[00:11:14] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.15.11
+[00:11:14] [main/INFO] (FabricLoader) Loading 55 mods:
 	- fabric-api 0.102.1+1.21.1
 	- fabric-api-base 0.4.42+6573ed8c6a
 	- fabric-api-lookup-api-v1 1.6.68+b55973446a
@@ -55,95 +55,74 @@
 	- minecraft 1.21.1
 	- mixinextras 0.3.5
 	- simchacraft 1.0.0
-[23:52:47] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.13.3+mixin.0.8.5/9527e6b0d2449408958fd1302594dc65ec5ade9c/sponge-mixin-0.13.3+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
-[23:52:48] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[23:52:48] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[23:52:48] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
-[23:52:49] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.5).
-[23:52:50] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 342 milliseconds
-[23:52:55] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[23:52:55] [Render thread/INFO] (Minecraft) Setting user: Player634
-[23:52:55] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[23:52:55] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
-[23:52:56] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, simchacraft
-[23:52:57] [Worker-Main-9/WARN] (Minecraft) File simchacraft:sounds/shofar_blow.ogg does not exist, cannot add it to event simchacraft:shofar_blow
-[23:52:57] [Worker-Main-13/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
-[23:52:57] [Worker-Main-15/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
-[23:52:57] [Worker-Main-10/WARN] (Minecraft) Texture simchacraft:item/vape with size 360x360 limits mip level from 4 to 3
-[23:52:57] [Worker-Main-10/WARN] (Minecraft) Texture simchacraft:item/maisa_spawn_egg with size 387x392 limits mip level from 3 to 0
-[23:52:57] [Worker-Main-10/WARN] (Minecraft) minecraft:textures/atlas/blocks.png: dropping miplevel from 4 to 0, because of minimum power of two: 1
-[23:52:58] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[23:52:58] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[23:52:58] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Focusrite Audio (2- Focusrite USB Audio)
-[23:52:58] [Render thread/INFO] (Minecraft) Sound engine started
-[23:52:59] [Render thread/INFO] (Minecraft) Created: 8192x4096x0 minecraft:textures/atlas/blocks.png-atlas
-[23:52:59] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[23:52:59] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[23:52:59] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[23:52:59] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[23:52:59] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[23:52:59] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[23:52:59] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[23:52:59] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[23:52:59] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[23:52:59] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[23:52:59] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[23:52:59] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[23:52:59] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[23:52:59] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[23:53:03] [Render thread/INFO] (Minecraft) Loaded 1290 recipes
-[23:53:03] [Render thread/INFO] (Minecraft) Loaded 1399 advancements
-[23:53:03] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 1.087 ms
-[23:53:03] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
-[23:53:03] [Server thread/INFO] (Minecraft) Generating keypair
-[23:53:04] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[23:53:04] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[23:53:04] [Render thread/INFO] (Minecraft) Time elapsed: 421 ms
-[23:53:04] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
-[23:53:04] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
-[23:53:05] [Server thread/INFO] (Minecraft) Player634[local:E:bb3da69c] logged in with entity id 183 at (-136.5, 86.0, -126.5)
-[23:53:05] [Server thread/INFO] (Minecraft) Player634 joined the game
-[23:53:06] [Render thread/INFO] (Minecraft) Loaded 2 advancements
-[23:53:06] [Render thread/WARN] (Minecraft) Received passengers for unknown entity
-[23:53:15] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/23, l='ServerLevel[New World]', x=-163.70, y=87.88, z=-107.31] died: Nevo Nahmias hit the ground too hard
-[23:53:24] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/15, l='ServerLevel[New World]', x=-151.70, y=103.00, z=-114.42] died: Nevo Nahmias was blown up by Maisa
-[23:53:25] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/72, l='ServerLevel[New World]', x=-154.11, y=99.00, z=-106.69] died: Nevo Nahmias was blown up by Maisa
-[23:53:25] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/105, l='ServerLevel[New World]', x=-154.67, y=99.00, z=-106.30] died: Nevo Nahmias was blown up by Maisa
-[23:53:25] [Render thread/INFO] (Minecraft) [System] [CHAT] A Maisa Creeper has been spawned!
-[23:53:26] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/59, l='ServerLevel[New World]', x=-154.30, y=101.00, z=-105.36] died: Nevo Nahmias was blown up by Maisa
-[23:53:26] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/67, l='ServerLevel[New World]', x=-154.30, y=101.00, z=-103.81] died: Nevo Nahmias was blown up by Maisa
-[23:53:27] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/68, l='ServerLevel[New World]', x=-152.78, y=102.00, z=-103.44] died: Nevo Nahmias was blown up by Maisa
-[23:53:27] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/69, l='ServerLevel[New World]', x=-153.25, y=101.00, z=-105.07] died: Nevo Nahmias was blown up by Maisa
-[23:53:27] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/71, l='ServerLevel[New World]', x=-153.72, y=101.00, z=-101.11] died: Nevo Nahmias was blown up by Maisa
-[23:53:27] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/73, l='ServerLevel[New World]', x=-150.75, y=101.00, z=-100.49] died: Nevo Nahmias was blown up by Maisa
-[23:53:27] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/81, l='ServerLevel[New World]', x=-153.74, y=102.00, z=-102.57] died: Nevo Nahmias was blown up by Maisa
-[23:53:27] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/84, l='ServerLevel[New World]', x=-154.61, y=100.00, z=-101.70] died: Nevo Nahmias was blown up by Maisa
-[23:53:27] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/88, l='ServerLevel[New World]', x=-156.08, y=101.00, z=-103.45] died: Nevo Nahmias was blown up by Maisa
-[23:53:27] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/107, l='ServerLevel[New World]', x=-153.36, y=100.00, z=-100.49] died: Nevo Nahmias was blown up by Maisa
-[23:53:27] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/104, l='ServerLevel[New World]', x=-151.48, y=103.00, z=-102.10] died: Nevo Nahmias was blown up by Maisa
-[23:53:27] [Server thread/INFO] (Minecraft) Player634 has made the advancement [Stone Age]
-[23:53:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Player634 has made the advancement [Stone Age]
-[23:53:27] [Render thread/INFO] (Minecraft) Loaded 20 advancements
-[23:53:27] [Server thread/INFO] (Minecraft) Player634 was blown up by Maisa
-[23:53:27] [Render thread/INFO] (Minecraft) [System] [CHAT] Player634 was blown up by Maisa
-[23:53:27] [Render thread/INFO] (Minecraft) Loaded 56 advancements
-[23:53:29] [Render thread/WARN] (Minecraft) Received passengers for unknown entity
-[23:53:30] [Server thread/INFO] (Minecraft) Named entity NevoNahmiasEntity['Nevo Nahmias'/19, l='ServerLevel[New World]', x=-163.30, y=87.88, z=-107.40] died: Nevo Nahmias hit the ground too hard
-[23:53:30] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[23:53:30] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[23:53:30] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[23:53:30] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[23:53:30] [Server thread/INFO] (Minecraft) Player634 lost connection: Disconnected
-[23:53:30] [Server thread/INFO] (Minecraft) Player634 left the game
-[23:53:30] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[23:53:30] [Server thread/INFO] (Minecraft) Stopping server
-[23:53:30] [Server thread/INFO] (Minecraft) Saving players
-[23:53:30] [Server thread/INFO] (Minecraft) Saving worlds
-[23:53:30] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[23:53:30] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[23:53:30] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[23:53:30] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
-[23:53:30] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23:53:30] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23:53:30] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
-[23:53:32] [Render thread/INFO] (Minecraft) Stopping!
+[00:11:15] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/User/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.13.3+mixin.0.8.5/9527e6b0d2449408958fd1302594dc65ec5ade9c/sponge-mixin-0.13.3+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[00:11:15] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[00:11:15] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[00:11:15] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_21
+[00:11:16] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.5).
+[00:11:17] [Datafixer Bootstrap/INFO] (Minecraft) 226 Datafixer optimizations took 360 milliseconds
+[00:11:22] [Render thread/INFO] (Minecraft) Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[00:11:22] [Render thread/INFO] (Minecraft) Setting user: Player715
+[00:11:23] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[00:11:23] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.3-snapshot
+[00:11:24] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-view-api-v2, fabric-blockrenderlayer-v1, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-command-api-v2, fabric-commands-v0, fabric-content-registries-v0, fabric-convention-tags-v1, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-item-group-api-v1, fabric-key-binding-api-v1, fabric-keybindings-v0, fabric-lifecycle-events-v1, fabric-loot-api-v2, fabric-loot-api-v3, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-renderer-registries-v1, fabric-rendering-data-attachment-v1, fabric-rendering-fluids-v1, fabric-rendering-v0, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-screen-api-v1, fabric-screen-handler-api-v1, fabric-sound-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, simchacraft
+[00:11:24] [Worker-Main-9/WARN] (Minecraft) File simchacraft:sounds/shofar_blow.ogg does not exist, cannot add it to event simchacraft:shofar_blow
+[00:11:24] [Worker-Main-13/INFO] (Minecraft) Found unifont_all_no_pua-15.1.05.hex, loading
+[00:11:24] [Worker-Main-2/INFO] (Minecraft) Found unifont_jp_patch-15.1.05.hex, loading
+[00:11:24] [Worker-Main-10/WARN] (Minecraft) Texture simchacraft:item/vape with size 360x360 limits mip level from 4 to 3
+[00:11:24] [Worker-Main-10/WARN] (Minecraft) Texture simchacraft:item/maisa_spawn_egg with size 387x392 limits mip level from 3 to 0
+[00:11:24] [Worker-Main-10/WARN] (Minecraft) minecraft:textures/atlas/blocks.png: dropping miplevel from 4 to 0, because of minimum power of two: 1
+[00:11:25] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[00:11:25] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[00:11:26] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Focusrite Audio (2- Focusrite USB Audio)
+[00:11:26] [Render thread/INFO] (Minecraft) Sound engine started
+[00:11:26] [Render thread/INFO] (Minecraft) Created: 8192x4096x0 minecraft:textures/atlas/blocks.png-atlas
+[00:11:26] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[00:11:26] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[00:11:26] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[00:11:26] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[00:11:26] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[00:11:26] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[00:11:26] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[00:11:26] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[00:11:27] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[00:11:27] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[00:11:27] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[00:11:27] [Render thread/INFO] (Minecraft) Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[00:11:27] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[00:11:27] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[00:11:31] [Render thread/INFO] (Minecraft) Loaded 1290 recipes
+[00:11:31] [Render thread/INFO] (Minecraft) Loaded 1399 advancements
+[00:11:31] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 1.103 ms
+[00:11:31] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.21.1
+[00:11:31] [Server thread/INFO] (Minecraft) Generating keypair
+[00:11:32] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[00:11:32] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[00:11:33] [Render thread/INFO] (Minecraft) Time elapsed: 517 ms
+[00:11:33] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
+[00:11:33] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
+[00:11:34] [Server thread/INFO] (Minecraft) Player715[local:E:61e51e95] logged in with entity id 145 at (-188.46177565585072, 87.09192795991898, -182.2932654882562)
+[00:11:34] [Server thread/INFO] (Minecraft) Player715 joined the game
+[00:11:34] [Render thread/INFO] (Minecraft) Loaded 2 advancements
+[00:11:35] [Render thread/WARN] (Minecraft) Received passengers for unknown entity
+[00:11:38] [Server thread/INFO] (Minecraft) [Player715: Set own game mode to Creative Mode]
+[00:11:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Creative Mode
+[00:11:47] [Render thread/INFO] (Minecraft) [System] [CHAT] A Maisa Creeper has been spawned!
+[00:11:55] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[00:11:55] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[00:11:55] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[00:11:55] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[00:11:56] [Server thread/INFO] (Minecraft) Player715 lost connection: Disconnected
+[00:11:56] [Server thread/INFO] (Minecraft) Player715 left the game
+[00:11:56] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[00:11:56] [Server thread/INFO] (Minecraft) Stopping server
+[00:11:56] [Server thread/INFO] (Minecraft) Saving players
+[00:11:56] [Server thread/INFO] (Minecraft) Saving worlds
+[00:11:56] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[00:11:56] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[00:11:56] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[00:11:56] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
+[00:11:56] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:11:56] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:11:56] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[00:11:56] [Render thread/INFO] (Minecraft) Stopping!
