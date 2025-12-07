@@ -1,2 +1,10 @@
 /summon creeper
 /kill @e
+/gamemode survival
+/gamemode creative
+/summon simchacraft:nevo_nahmias
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival

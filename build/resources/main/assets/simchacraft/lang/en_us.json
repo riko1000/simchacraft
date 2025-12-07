@@ -7,4 +7,9 @@
   "item.simchacraft.menorah.tooltip": "A decorative menorah — festive and friendly.",
   "item.simchacraft.challah.tooltip": "Soft, braided bread. It's just for fun in-game.",
   "item.simchacraft.shofar.tooltip": "Blow it to make a joyful (and goofy) sound and get a tiny buff."
+  ,
+  "item.simchacraft.vape": "Vape",
+  "item.simchacraft.vape.tooltip": "A small handheld device that emits flavored vapor; causes nausea and short poisoning.",
+  "entity.simchacraft.nevo_nahmias": "Nevo Nahmias",
+  "item.simchacraft.nevo_spawn_egg": "Nevo Spawn Egg"
 }

@@ -1,12 +1,17 @@
 {
+  "vape_inhale": {
+    "sounds": [
+      { "name": "simchacraft:vape_inhale" }
+    ]
+  },
   "shofar_blow": {
     "sounds": [
-      "simchacraft:shofar_blow_sound"
+      { "name": "simchacraft:shofar_blow" }
     ]
   },
   "maisa_pop": {
     "sounds": [
-      "simchacraft:maisa_pop_sound"
+      { "name": "simchacraft:maisa_pop" }
     ]
   }
 }

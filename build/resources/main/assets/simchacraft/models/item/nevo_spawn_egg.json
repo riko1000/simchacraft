@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "simchacraft:item/nevo_spawn_egg"
+  }
+}
