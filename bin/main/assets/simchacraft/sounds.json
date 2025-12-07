@@ -11,7 +11,7 @@
   },
   "maisa_pop": {
     "sounds": [
-      { "name": "simchacraft:maisa_pop" }
+      { "name": "simchacraft:maisa_pop_sound" }
     ]
   }
 }

@@ -14,8 +14,11 @@ import net.minecraft.world.World;
 
 /**
  * Simple "vape" item: emits smoke particles, plays a sound, and grants a short benign effect for flavor.
+ * Has a 3-second cooldown between uses.
  */
 public class VapeItem extends Item {
+    private static final int COOLDOWN_TICKS = 3 * 20; // 3 seconds = 60 ticks (20 ticks/second)
+
     public VapeItem(Settings settings) {
         super(settings);
     }
@@ -31,6 +34,9 @@ public class VapeItem extends Item {
 
             // Play our custom inhale sound on the server so nearby players hear it
             world.playSound(null, user.getBlockPos(), SimchaCraftMod.VAPE_INHALE_EVENT, net.minecraft.sound.SoundCategory.PLAYERS, 1.0F, 1.0F);
+            
+            // Set the item cooldown for 4 seconds
+            user.getItemCooldownManager().set(this, COOLDOWN_TICKS);
         } else {
             // Client-side visual + sound
             for (int i = 0; i < 12; i++) {
